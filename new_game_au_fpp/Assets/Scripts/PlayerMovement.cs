@@ -6,10 +6,13 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Animator player_anim;
     [SerializeField] float character_mov_speeed_fwd = 20f;
     [SerializeField] float character_mov_speed_sidew = 5f;
+    public float gravity_val = -9.81f;
+    Vector3 vel;
 
     private void Update()
     {
         movement();
+        gravity();
         apply_animation();
     }
     void movement()
@@ -28,5 +31,18 @@ public class PlayerMovement : MonoBehaviour
 
         player_anim.SetFloat("Input X", inputX);
         player_anim.SetFloat("Input Y", inputY);
+    }
+    void gravity()
+    {
+        if (controller.isGrounded)
+        {
+            vel.y = gravity_val;
+        }
+        else
+        {
+            vel.y += gravity_val * Time.deltaTime;
+        }
+        
+        controller.Move(vel * Time.deltaTime);
     }
 }

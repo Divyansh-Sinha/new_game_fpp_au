@@ -970,7 +970,7 @@ CharacterController:
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: 0.83, z: 0}
+  m_Center: {x: 0, y: 0.9, z: 0}
 --- !u!114 &2011448229458216336
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1002,6 +1002,7 @@ MonoBehaviour:
   player_anim: {fileID: 6351081291178095047}
   character_mov_speeed_fwd: 3.5
   character_mov_speed_sidew: 1.5
+  gravity_val: -9.81
 --- !u!1 &6351081290421364879
 GameObject:
   m_ObjectHideFlags: 0
