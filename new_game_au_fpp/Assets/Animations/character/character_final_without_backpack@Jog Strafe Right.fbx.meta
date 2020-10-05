@@ -1,11 +1,11 @@
 fileFormatVersion: 2
-guid: 580a4597cd309df4e979443c3354adbb
+guid: ad2cbffb8638b224ab553e584e54fb09
 ModelImporter:
   serializedVersion: 20101
   internalIDToNameTable:
   - first:
       74: -203655887218126122
-    second: Idle
+    second: Jog Strafe Right
   externalObjects: {}
   materials:
     materialImportMode: 0
@@ -35,11 +35,11 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Idle
+      name: Jog Strafe Right
       takeName: mixamo.com
       internalID: 0
       firstFrame: 0
-      lastFrame: 117
+      lastFrame: 43
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
