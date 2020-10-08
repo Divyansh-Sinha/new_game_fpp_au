@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
+using Mirror;
 
-public class MouseLook : MonoBehaviour
+public class MouseLook : NetworkBehaviour
 {
     [SerializeField] Transform camera_transfrom;
     public float mouse_sensitivity = 100f;
@@ -20,6 +21,8 @@ public class MouseLook : MonoBehaviour
     }
     void mouse_look()
     {
+        if (!isLocalPlayer) { return; }
+
         float Mousex = Input.GetAxis("Mouse X") * mouse_sensitivity * Time.deltaTime;
         float Mousey = Input.GetAxis("Mouse Y") * mouse_sensitivity * Time.deltaTime;
 
@@ -31,6 +34,8 @@ public class MouseLook : MonoBehaviour
     }
     void camera_ease()
     {
+        if (!isLocalPlayer) { return; }
+
         camera_transfrom.position = Vector3.Lerp(camera_transfrom.position, eye_transform.position, 1.0f);
     }
 }

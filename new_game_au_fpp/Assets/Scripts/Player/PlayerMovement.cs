@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
+using Mirror;
 
-public class PlayerMovement : MonoBehaviour
+public class PlayerMovement : NetworkBehaviour
 {
     [SerializeField] CharacterController controller;
     [SerializeField] Animator player_anim;
@@ -17,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
     }
     void movement()
     {
+        if (!isLocalPlayer) { return; }
+
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
@@ -26,6 +29,8 @@ public class PlayerMovement : MonoBehaviour
     }
     void apply_animation()
     {
+        if (!isLocalPlayer) { return; }
+
         float inputX = Input.GetAxis("Horizontal");
         float inputY = Input.GetAxis("Vertical");
 
@@ -34,6 +39,8 @@ public class PlayerMovement : MonoBehaviour
     }
     void gravity()
     {
+        if (!isLocalPlayer) { return; }
+
         if (controller.isGrounded)
         {
             vel.y = gravity_val;
