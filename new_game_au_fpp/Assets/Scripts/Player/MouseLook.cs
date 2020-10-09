@@ -1,5 +1,10 @@
+<<<<<<< HEAD:new_game_au_fpp/Assets/Scripts/Player/MouseLook.cs
 ﻿using UnityEngine;
 using Mirror;
+=======
+﻿using Mirror;
+using UnityEngine;
+>>>>>>> 4441c97dca05073d7e73775ea9cfe6113089a334:new_game_au_fpp/Assets/Scripts/MouseLook.cs
 
 public class MouseLook : NetworkBehaviour
 {

@@ -930,9 +930,14 @@ GameObject:
   - component: {fileID: 2011448229458216343}
   - component: {fileID: 2011448229458216336}
   - component: {fileID: 4884588418549880080}
+<<<<<<< HEAD
   - component: {fileID: 8089101979409888553}
   - component: {fileID: 4556839721523556687}
   - component: {fileID: 410838717}
+=======
+  - component: {fileID: 5363792961472579126}
+  - component: {fileID: 5573517836690280526}
+>>>>>>> 4441c97dca05073d7e73775ea9cfe6113089a334
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -981,7 +986,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6351081290224817763}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ed63d525768662e47b9815bfd494c85c, type: 3}
   m_Name: 
@@ -1009,8 +1014,12 @@ MonoBehaviour:
   player_anim: {fileID: 6351081291178095047}
   character_mov_speeed_fwd: 3.5
   character_mov_speed_sidew: 1.5
+<<<<<<< HEAD
   gravity_val: -9.81
 --- !u!114 &8089101979409888553
+=======
+--- !u!114 &5363792961472579126
+>>>>>>> 4441c97dca05073d7e73775ea9cfe6113089a334
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1026,7 +1035,11 @@ MonoBehaviour:
   serverOnly: 0
   m_AssetId: 
   hasSpawned: 0
+<<<<<<< HEAD
 --- !u!114 &4556839721523556687
+=======
+--- !u!114 &5573517836690280526
+>>>>>>> 4441c97dca05073d7e73775ea9cfe6113089a334
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1044,6 +1057,7 @@ MonoBehaviour:
   localPositionSensitivity: 0.01
   localRotationSensitivity: 0.01
   localScaleSensitivity: 0.01
+<<<<<<< HEAD
 --- !u!114 &410838717
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1060,6 +1074,8 @@ MonoBehaviour:
   syncInterval: 0
   clientAuthority: 1
   animator: {fileID: 6351081291178095047}
+=======
+>>>>>>> 4441c97dca05073d7e73775ea9cfe6113089a334
 --- !u!1 &6351081290421364879
 GameObject:
   m_ObjectHideFlags: 0

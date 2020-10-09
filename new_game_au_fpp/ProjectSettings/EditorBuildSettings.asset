@@ -6,9 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+<<<<<<< HEAD
     path: Assets/Scenes/Offline.unity
     guid: a61db3ba8e4d841498279011ba3f1e74
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: d1c3109bdb54ad54c8a2b2838528e640
+=======
+    path: Assets/Rishu/Main Menu UI.unity
+    guid: b2fe5faa71aaeef4b8797d215b9e2fae
+  - enabled: 1
+    path: Assets/Rishu/Game.unity
+    guid: cca64e5c983a1014487e3fab49ccbb01
+>>>>>>> 4441c97dca05073d7e73775ea9cfe6113089a334
   m_configObjects: {}
