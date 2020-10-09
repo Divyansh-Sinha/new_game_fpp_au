@@ -14,15 +14,22 @@ public class MouseLook : NetworkBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
     }
-    private void Update()
+    public override void OnStartAuthority()
     {
-        mouse_look();
-        camera_ease();
+        camera_transfrom.gameObject.SetActive(true);
+        
+        enabled = true;
     }
-    void mouse_look()
+    private void Update()
     {
         if (!isLocalPlayer) { return; }
 
+        mouse_look();
+        camera_ease();
+    }
+    
+    void mouse_look()
+    {
         float Mousex = Input.GetAxis("Mouse X") * mouse_sensitivity * Time.deltaTime;
         float Mousey = Input.GetAxis("Mouse Y") * mouse_sensitivity * Time.deltaTime;
 
@@ -34,8 +41,6 @@ public class MouseLook : NetworkBehaviour
     }
     void camera_ease()
     {
-        if (!isLocalPlayer) { return; }
-
         camera_transfrom.position = Vector3.Lerp(camera_transfrom.position, eye_transform.position, 1.0f);
     }
 }

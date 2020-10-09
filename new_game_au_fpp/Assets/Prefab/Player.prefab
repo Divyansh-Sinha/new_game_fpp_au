@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1687258585
 Transform:
   m_ObjectHideFlags: 0
@@ -931,7 +931,8 @@ GameObject:
   - component: {fileID: 2011448229458216336}
   - component: {fileID: 4884588418549880080}
   - component: {fileID: 8089101979409888553}
-  - component: {fileID: 316668002}
+  - component: {fileID: 4556839721523556687}
+  - component: {fileID: 410838717}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1025,7 +1026,7 @@ MonoBehaviour:
   serverOnly: 0
   m_AssetId: 
   hasSpawned: 0
---- !u!114 &316668002
+--- !u!114 &4556839721523556687
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1043,6 +1044,22 @@ MonoBehaviour:
   localPositionSensitivity: 0.01
   localRotationSensitivity: 0.01
   localScaleSensitivity: 0.01
+--- !u!114 &410838717
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6351081290224817763}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7f6f3bf89aa97405989c802ba270f815, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  syncMode: 0
+  syncInterval: 0
+  clientAuthority: 1
+  animator: {fileID: 6351081291178095047}
 --- !u!1 &6351081290421364879
 GameObject:
   m_ObjectHideFlags: 0

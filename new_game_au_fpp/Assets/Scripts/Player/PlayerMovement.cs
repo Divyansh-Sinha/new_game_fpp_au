@@ -12,14 +12,15 @@ public class PlayerMovement : NetworkBehaviour
 
     private void Update()
     {
+        if (!isLocalPlayer) { return; }
+
         movement();
         gravity();
         apply_animation();
     }
+    
     void movement()
     {
-        if (!isLocalPlayer) { return; }
-
         float x = Input.GetAxis("Horizontal");
         float z = Input.GetAxis("Vertical");
 
@@ -29,8 +30,6 @@ public class PlayerMovement : NetworkBehaviour
     }
     void apply_animation()
     {
-        if (!isLocalPlayer) { return; }
-
         float inputX = Input.GetAxis("Horizontal");
         float inputY = Input.GetAxis("Vertical");
 
@@ -39,8 +38,6 @@ public class PlayerMovement : NetworkBehaviour
     }
     void gravity()
     {
-        if (!isLocalPlayer) { return; }
-
         if (controller.isGrounded)
         {
             vel.y = gravity_val;
